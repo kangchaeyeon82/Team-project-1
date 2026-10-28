@@ -3,43 +3,183 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>팀원 2 · 축구</title>
+  <title>채웅 · 축구</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ✏️ 이 폴더(members/member2)는 팀원 2 전용입니다. 마음껏 꾸며 주세요! -->
+  <!-- 이 폴더(members/member2)는 채웅 전용입니다. -->
   <a class="back" href="../../index.html">← 홈으로</a>
 
+  <!-- 표지 -->
   <header class="hero">
-    <p class="tag">My Hobby</p>
-    <h1>⚽ 축구</h1>
-    <p class="who">팀원 2</p>
+    <div class="hero-inner">
+      <p class="kicker">Matchday Programme · Season 26/27</p>
+      <h1 class="title">축구</h1>
+      <p class="subtitle">공 하나로 시작해 90분을 꽉 채우는 취미</p>
+      <p class="byline">by <strong>채웅</strong></p>
+    </div>
+    <span class="hero-number" aria-hidden="true">26/27</span>
+    <dl class="stats">
+      <div><dt>90'</dt><dd>한 경기</dd></div>
+      <div><dt>11</dt><dd>한 팀 인원</dd></div>
+      <div><dt>4-2-3-1</dt><dd>최애 전술</dd></div>
+    </dl>
   </header>
 
   <main>
-    <section>
-      <h2>왜 좋아하나요?</h2>
-      <p>여기에 이 취미를 좋아하는 이유를 적어 주세요. 응원하는 팀, 직접 뛰는 포지션 등등.</p>
-    </section>
-
-    <section>
-      <h2>좋아하는 것들</h2>
-      <ul class="list">
-        <li><strong>응원하는 팀</strong> — 팀 이름</li>
-        <li><strong>최애 선수</strong> — 선수 이름</li>
-        <li><strong>인생 경기</strong> — 경기 설명</li>
+    <!-- 01 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">01</span>
+        <h2>왜 좋아하나요?</h2>
+      </header>
+      <p class="lead">
+        공 하나만 있으면 어디서든 친구들과 같이 뛸 수 있는 게 축구의 제일 큰 매력이에요.
+        직접 뛸 때는 패스가 딱 맞아떨어지는 순간이 짜릿하고,
+        경기를 볼 때는 90분 동안 언제 골이 터질지 몰라서 끝까지 눈을 뗄 수가 없어요.
+      </p>
+      <ul class="likes">
+        <li><span>직접 뛰기</span>주말에 친구들이랑 풋살 한 판</li>
+        <li><span>경기 보기</span>새벽 해외축구 생중계와 하이라이트 영상</li>
+        <li><span>국가대표 경기</span>다 같이 모여서 응원하는 맛</li>
       </ul>
     </section>
 
-    <section>
-      <h2>사진</h2>
+    <!-- 02 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">02</span>
+        <h2>좋아하는 팀 전술</h2>
+      </header>
+      <p class="team-line"><strong>FC Bayern München</strong> · 감독 뱅상 콤파니 · 4-2-3-1</p>
+
+      <div class="tactics">
+        <figure class="board">
+          <svg viewBox="0 0 600 820" role="img" aria-label="바이에른 뮌헨 4-2-3-1 포메이션 전술판">
+            <defs>
+              <pattern id="grass" width="600" height="160" patternUnits="userSpaceOnUse">
+                <rect width="600" height="80" fill="#1d5c3a" />
+                <rect y="80" width="600" height="80" fill="#1a5434" />
+              </pattern>
+            </defs>
+            <rect width="600" height="820" fill="url(#grass)" />
+            <g fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="3">
+              <rect x="20" y="20" width="560" height="780" />
+              <line x1="20" y1="410" x2="580" y2="410" />
+              <circle cx="300" cy="410" r="70" />
+              <rect x="130" y="20" width="340" height="130" />
+              <rect x="220" y="20" width="160" height="45" />
+              <path d="M 240 150 A 70 70 0 0 0 360 150" />
+              <rect x="130" y="670" width="340" height="130" />
+              <rect x="220" y="755" width="160" height="45" />
+              <path d="M 240 670 A 70 70 0 0 1 360 670" />
+            </g>
+            <circle cx="300" cy="410" r="4" fill="rgba(255,255,255,0.7)" />
+
+            <!-- 공격 방향 -->
+            <g class="arrow">
+              <line x1="560" y1="520" x2="560" y2="300" />
+              <path d="M 550 314 L 560 296 L 570 314" />
+            </g>
+
+            <g class="player"><circle cx="300" cy="180" r="26" /><text x="300" y="186">ST</text><text class="name" x="300" y="230">케인</text></g>
+            <g class="player"><circle cx="110" cy="330" r="26" /><text x="110" y="336">LW</text></g>
+            <g class="player"><circle cx="300" cy="345" r="26" /><text x="300" y="351">CAM</text></g>
+            <g class="player"><circle cx="490" cy="330" r="26" /><text x="490" y="336">RW</text><text class="name" x="490" y="380">올리세</text></g>
+            <g class="player"><circle cx="225" cy="500" r="26" /><text x="225" y="506">CDM</text></g>
+            <g class="player"><circle cx="375" cy="500" r="26" /><text x="375" y="506">CDM</text></g>
+            <g class="player"><circle cx="95" cy="610" r="26" /><text x="95" y="616">LB</text></g>
+            <g class="player"><circle cx="225" cy="635" r="26" /><text x="225" y="641">CB</text></g>
+            <g class="player"><circle cx="375" cy="635" r="26" /><text x="375" y="641">CB</text></g>
+            <g class="player"><circle cx="505" cy="610" r="26" /><text x="505" y="616">RB</text></g>
+            <g class="player gk"><circle cx="300" cy="745" r="26" /><text x="300" y="751">GK</text><text class="name" x="300" y="792">노이어</text></g>
+          </svg>
+          <figcaption>공을 오래 가지고, 수비 라인을 하프라인 근처까지 올려서 상대를 몰아붙이는 축구. (2026-27 시즌 기준)</figcaption>
+        </figure>
+
+        <ol class="roles">
+          <li><b>ST</b><div><h3>원톱</h3><p>골만 넣는 게 아니라 내려와서 공을 받아 주고 동료에게 연결하는 '9.5번' 역할까지 해요.</p></div></li>
+          <li><b>LW · RW</b><div><h3>윙어</h3><p>터치라인에 넓게 서 있다가 1:1 돌파로 수비를 무너뜨려요. 반대발 윙어가 안으로 파고들며 슈팅하는 장면이 많아요.</p></div></li>
+          <li><b>CAM</b><div><h3>공격형 미드필더</h3><p>상대 미드필더와 수비 사이 좁은 공간에서 공을 받아 드리블과 킬패스로 찬스를 만들어요.</p></div></li>
+          <li><b>CDM</b><div><h3>수비형 미드필더 2명</h3><p>한 명은 수비 사이로 내려와 빌드업을 시작하고, 다른 한 명은 앞으로 나가 공격을 거들어요.</p></div></li>
+          <li><b>LB · RB</b><div><h3>풀백</h3><p>공격할 땐 높이 올라가거나 안쪽으로 좁혀 들어와 미드필더처럼 뛰어요.</p></div></li>
+          <li><b>CB · GK</b><div><h3>센터백과 골키퍼</h3><p>센터백은 하프라인까지 올라서고, 골키퍼는 그 뒷공간을 커버하는 '스위퍼 키퍼'예요.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">03</span>
+        <h2>26-27 시즌 주요 선수</h2>
+      </header>
+      <ul class="squad">
+        <li><span class="pos">ST</span><h3>해리 케인</h3><p>골도 넣고 내려와서 연결도 하는 팀의 중심 공격수</p></li>
+        <li><span class="pos">RW</span><h3>마이클 올리세</h3><p>오른쪽에서 안으로 파고드는 왼발 드리블러</p></li>
+        <li><span class="pos">GK</span><h3>마누엘 노이어</h3><p>페널티박스 밖까지 나오는 원조 스위퍼 키퍼</p></li>
+      </ul>
+    </section>
+
+    <!-- 04 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">04</span>
+        <h2>바이에른 전술의 핵심</h2>
+      </header>
+      <ol class="keys">
+        <li><h3>점유율 축구</h3><p>짧은 패스로 공을 계속 돌리면서 상대가 지치고 빈틈이 생길 때까지 기다려요.</p></li>
+        <li><h3>게겐프레싱</h3><p>공을 뺏기면 5~6초 안에 여러 명이 달려들어 바로 다시 뺏어 와요.</p></li>
+        <li><h3>하이라인</h3><p>수비 라인을 높이 올려 경기장을 좁게 만들고, 상대를 자기 진영에 가둬요.</p></li>
+      </ol>
+    </section>
+
+    <!-- 05 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">05</span>
+        <h2>이 전술의 장단점</h2>
+      </header>
+      <div class="procon">
+        <div class="pro">
+          <h3>장점</h3>
+          <ul>
+            <li>상대 진영에서 경기를 해서 슈팅 기회가 엄청 많아요</li>
+            <li>공을 뺏기자마자 압박해서 상대가 역습할 틈이 적어요</li>
+            <li>윙어와 CAM의 개인기로 밀집 수비도 뚫을 수 있어요</li>
+          </ul>
+        </div>
+        <div class="con">
+          <h3>단점</h3>
+          <ul>
+            <li>압박이 한 번 풀리면 하이라인 뒷공간이 텅 비어요</li>
+            <li>빠른 공격수에게 롱패스 한 방으로 뚫릴 수 있어요</li>
+            <li>선수들이 엄청 많이 뛰어야 해서 체력 소모가 커요</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 -->
+    <section class="block">
+      <header class="block-head">
+        <span class="num">06</span>
+        <h2>사진</h2>
+      </header>
       <div class="gallery">
         <!-- images 폴더를 만들어 사진을 넣고 <img src="images/파일이름.jpg" alt="설명"> 으로 바꿔 주세요 -->
-        <div class="ph">사진 1</div>
-        <div class="ph">사진 2</div>
-        <div class="ph">사진 3</div>
+        <div class="ph"><span>Photo 01</span>풋살 하는 날</div>
+        <div class="ph"><span>Photo 02</span>경기장 직관</div>
+        <div class="ph"><span>Photo 03</span>새벽 응원</div>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>Full Time · 채웅의 축구 페이지</p>
+  </footer>
 </body>
 </html>

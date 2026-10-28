@@ -3,41 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>팀원 2 · 축구</title>
+  <title>채웅 · 축구</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ✏️ 이 폴더(members/member2)는 팀원 2 전용입니다. 마음껏 꾸며 주세요! -->
+  <!-- ✏️ 이 폴더(members/member2)는 채웅 전용입니다. -->
   <a class="back" href="../../index.html">← 홈으로</a>
 
   <header class="hero">
+    <div class="pitch-lines" aria-hidden="true"></div>
     <p class="tag">My Hobby</p>
     <h1>⚽ 축구</h1>
-    <p class="who">팀원 2</p>
+    <p class="who">채웅</p>
+    <ul class="stats">
+      <li><strong>90'</strong><span>한 경기</span></li>
+      <li><strong>11</strong><span>한 팀 인원</span></li>
+      <li><strong>1</strong><span>공 하나면 끝</span></li>
+    </ul>
   </header>
 
   <main>
     <section>
       <h2>왜 좋아하나요?</h2>
-      <p>여기에 이 취미를 좋아하는 이유를 적어 주세요. 응원하는 팀, 직접 뛰는 포지션 등등.</p>
+      <p>
+        공 하나만 있으면 어디서든 친구들과 같이 뛸 수 있는 게 축구의 제일 큰 매력이에요.
+        직접 뛸 때는 패스가 딱 맞아떨어지는 순간이 짜릿하고,
+        경기를 볼 때는 90분 동안 언제 골이 터질지 몰라서 끝까지 눈을 뗄 수가 없어요.
+      </p>
     </section>
 
     <section>
       <h2>좋아하는 것들</h2>
       <ul class="list">
-        <li><strong>응원하는 팀</strong> — 팀 이름</li>
-        <li><strong>최애 선수</strong> — 선수 이름</li>
-        <li><strong>인생 경기</strong> — 경기 설명</li>
+        <li><strong>직접 뛰기</strong> — 주말에 친구들이랑 풋살 한 판</li>
+        <li><strong>경기 보기</strong> — 새벽 해외축구 생중계와 하이라이트 영상</li>
+        <li><strong>국가대표 경기</strong> — 다 같이 모여서 응원하는 맛</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>내가 좋아하는 포메이션 4-3-3</h2>
+      <div class="pitch" aria-label="4-3-3 포메이션 그림">
+        <div class="row"><span>LW</span><span>ST</span><span>RW</span></div>
+        <div class="row"><span>CM</span><span>CM</span><span>CM</span></div>
+        <div class="row"><span>LB</span><span>CB</span><span>CB</span><span>RB</span></div>
+        <div class="row"><span class="gk">GK</span></div>
+      </div>
+      <p class="caption">양쪽 윙어가 빠르게 치고 들어가는 공격적인 전술이라 보는 재미가 있어요.</p>
     </section>
 
     <section>
       <h2>사진</h2>
       <div class="gallery">
         <!-- images 폴더를 만들어 사진을 넣고 <img src="images/파일이름.jpg" alt="설명"> 으로 바꿔 주세요 -->
-        <div class="ph">사진 1</div>
-        <div class="ph">사진 2</div>
-        <div class="ph">사진 3</div>
+        <div class="ph">⚽ 풋살 하는 날</div>
+        <div class="ph">🏟️ 경기장 직관</div>
+        <div class="ph">📺 새벽 응원</div>
       </div>
     </section>
   </main>

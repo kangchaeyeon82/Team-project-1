@@ -1,4 +1,4 @@
-/* 팀원 3 전용 스타일 — 자유롭게 바꾸세요 */
+/* 유나 전용 스타일 — 자유롭게 바꾸세요 */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -28,6 +28,7 @@ body {
 
 main { max-width: 720px; margin: 0 auto; padding: 48px 24px 96px; }
 section { margin-bottom: 48px; }
+section > p + p { margin-top: 12px; }
 h2 { font-size: 1.5rem; margin-bottom: 14px; color: #b45309; }
 h3 { font-size: 1.05rem; margin: 18px 0 8px; }
 
@@ -40,7 +41,28 @@ h3 { font-size: 1.05rem; margin: 18px 0 8px; }
 }
 .recipe ul, .recipe ol { padding-left: 1.4em; }
 .recipe li { margin-bottom: 4px; }
+.dessert { box-shadow: 6px 6px 0 #92400e; }
+.recipe .badge {
+  display: inline-block; margin-bottom: 8px; padding: 2px 12px;
+  background: #422006; color: #fffbeb; border-radius: 999px;
+  font-size: 0.85rem; font-weight: 700;
+}
+.recipe .meta { font-size: 0.9rem; font-weight: 600; color: #92400e; }
+.recipe .tip {
+  margin-top: 18px; padding: 12px 16px;
+  background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.menu { list-style: none; display: grid; gap: 10px; }
+.menu li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  padding: 12px 18px;
+  background: #ffffff; border: 2px solid #422006; border-radius: 12px;
+}
+.menu .dish { font-weight: 700; }
+.menu .note { font-size: 0.9rem; color: #92400e; text-align: right; }
 
 .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
 .gallery img, .ph { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
-.ph { display: grid; place-items: center; background: #fde68a; color: #92400e; }
+.ph { display: grid; place-items: center; background: #fde68a; color: #92400e; font-weight: 600; text-align: center; line-height: 1.5; }

@@ -5,5 +5,5 @@ const MEMBERS = [
   { id: "member1", name: "한웅", hobby: "독서", emoji: "📚", color: "#c2410c" },
   { id: "member2", name: "채웅", hobby: "축구", emoji: "⚽", color: "#15803d" },
   { id: "member3", name: "유나", hobby: "요리", emoji: "🍳", color: "#b45309" },
-  { id: "member4", name: "팀원 4", hobby: "음악", emoji: "🎧", color: "#6d28d9" },
+  { id: "member4", name: "채연", hobby: "음악", emoji: "🎧", color: "#6d28d9" },
 ];

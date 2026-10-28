@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>우리 팀 취미 모음</title>
+  <link rel="stylesheet" href="assets/home.css" />
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Team Project 1</p>
+    <h1>우리 팀 취미 모음</h1>
+    <p class="lead">팀원들이 좋아하는 것들을 한곳에 모았어요. 카드를 눌러 각자의 페이지를 구경해 보세요.</p>
+  </header>
+
+  <main>
+    <section class="grid" id="member-grid" aria-label="팀원 목록">
+      <!-- assets/members.js 의 목록으로 카드가 자동 생성됩니다 -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© Team Project 1 · 각 페이지는 팀원이 직접 꾸몄습니다.</p>
+  </footer>
+
+  <script src="assets/members.js"></script>
+  <script>
+    const grid = document.getElementById("member-grid");
+    MEMBERS.forEach((m) => {
+      const card = document.createElement("a");
+      card.className = "card";
+      card.href = `members/${m.id}/index.html`;
+      card.style.setProperty("--accent", m.color);
+      card.innerHTML = `
+        <span class="emoji" aria-hidden="true">${m.emoji}</span>
+        <span class="name">${m.name}</span>
+        <span class="hobby">${m.hobby}</span>
+        <span class="go">페이지 보러가기 →</span>
+      `;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
